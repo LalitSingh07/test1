@@ -134,6 +134,9 @@ button:hover{
     font-size: 140px;
     z-index: 9;
 }
+#item1-2bag{
+    display: none;
+}
 .item-1 p{
     position: relative;
     top: -80%;
@@ -250,6 +253,7 @@ button:hover{
     background-repeat: no-repeat;
     overflow: visible;
     padding: 5%;
+    position: relative;
 }
 
 .item-3 h1{
@@ -263,12 +267,12 @@ button:hover{
 .item-3 p{
     font-size: 1em;
     display: block;
-    width:60em;
-    height: 20em;
+    width:30em;
+    height: 30em;
     line-height: 1em;
-    position: relative;
+    position:absolute;
     right: 10em;
-    top: 50%;
+    top: 55%;
     text-align: justify;
     border: 2px solid red;
     background-color: white;
@@ -484,15 +488,19 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(backgroundtrick-phone.jpg); 
+        background-image: url("home-phone.jpg"); 
+        
     }
     .header-text {
         margin-top: 55%;
         font-size: 16px; 
         width: 60%;
     }
+    .header-text button{
+        margin-top: 40px;
+    }
     .header-text h1{
-        font-size: 25px;
+        font-size: 35px;
     }
     nav .fas{
         display: block;
@@ -526,6 +534,69 @@ nav .fas{
     /* ------------------service--------- */
    .subcont{
     height: 50vh;
+    width: 100%;
+   }
+/* -------------------gap---------- */
+
+.gap{
+    height: 10vh;
+}
+.img1{
+    display: none;
+}
+   /* -------------- */
+
+   .item-3 h1{
+    font-size: 4em;
+   align-self:self-start;
+   margin-top: 2em;
+   }
+   .item-3 p{
+    font-size: 1em;
+   margin-top:-12em;
+right: 10%;
+   width: 20em;
+   height: 20em;
+   }
+
+   .item-2{
+    background: url("desktop-phone.jpg");
+    background-size: 100% 100%;
+   }
+   .item-2 img{
+    display: none;
+   }
+   .item-2 h1{
+   font-size: 3.5em;
+   left: 30%;
+   top: 60%;
+   }
+   .item-2-text{
+    left: 20%;
+   }
+   #item1-2bag{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border: 2px solid red; */
+    z-index: 10;
+   
+   }
+   #item1bag{
+    display: none;
+   }
+   .item-1{
+    height: 80vh;
+   }
+   .item-1 h1{
+    font-size: 5em;
+   }
+   .item-1 p{
+    left: 40%;
+    width: 20em;
+    margin-top: 10em;
+    
    }
 }
 
